@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ferramentas para Professores</title>
+<meta name="description" content="Ferramentas simples para o dia a dia do professor: consulta de notas e faltas, fechamento de notas e orientação de cursos.">
+<style>
+:root{--bg:#f4f5f8;--card:#fff;--ink:#1c2233;--mut:#667089;--line:#e2e5ee;--acc:#3b5bdb;--accbg:#eaefff}
+@media (prefers-color-scheme:dark){:root{--bg:#12151d;--card:#1b2030;--ink:#eef0f6;--mut:#97a0b8;--line:#2b3247;--acc:#7e97ff;--accbg:#242c4a}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1000px;margin:0 auto;padding:48px 20px 40px}
+header{margin-bottom:32px}
+h1{margin:0 0 8px;font-size:32px;line-height:1.15}
+header p{margin:0;color:var(--mut);max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card:hover{border-color:var(--acc)}
+.tag{align-self:flex-start;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:600;background:var(--accbg);color:var(--acc)}
+.card h2{margin:14px 0 8px;font-size:21px;line-height:1.2}
+.card p{margin:0 0 20px;color:var(--mut);font-size:15px;flex:1}
+.btn{display:block;text-align:center;padding:11px 16px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none;font-weight:600}
+.btn:hover{opacity:.9}
+.btn:focus-visible{outline:3px solid var(--accbg);outline-offset:2px}
+footer{margin-top:36px;color:var(--mut);font-size:13px}
+@media (max-width:520px){.wrap{padding:28px 16px}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header>
+  <h1>Ferramentas para Professores</h1>
+  <p>Ferramentas simples para o dia a dia. Escolha uma e clique em Abrir.</p>
+ </header>
+ <main class="grid">
+  <article class="card">
+   <span class="tag">Notas e faltas</span>
+   <h2>Notas Mapão</h2>
+   <p>Carregue a planilha do mapão e veja a nota e as faltas de cada aluno, disciplina por disciplina. A planilha é lida só no seu navegador.</p>
+   <a class="btn" href="https://notas-mapao.onrender.com/" target="_blank" rel="noopener">Abrir</a>
+  </article>
+  <article class="card">
+   <span class="tag">Fechamento</span>
+   <h2>Notas Edu Pro</h2>
+   <p>Automatiza o fechamento de notas a partir de relatórios CSV de atividades e progresso. O processamento é feito no navegador.</p>
+   <a class="btn" href="https://notas-edu-pro.onrender.com/" target="_blank" rel="noopener">Abrir</a>
+  </article>
+  <article class="card">
+   <span class="tag">Orientação</span>
+   <h2>Bússola de Cursos</h2>
+   <p>Teste vocacional de 12 perguntas para ajudar os alunos a escolher cursos do Provão Paulista (Fatec, Univesp, USP, Unesp e Unicamp).</p>
+   <a class="btn" href="https://bussola-de-cursos.onrender.com/" target="_blank" rel="noopener">Abrir</a>
+  </article>
+ </main>
+</div>
+</body>
+</html>
