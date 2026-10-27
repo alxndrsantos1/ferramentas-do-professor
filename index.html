@@ -31,7 +31,12 @@ tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"','ui-sans
       </span>
       <span class="text-lg font-extrabold tracking-tight text-slate-900">Ferramentas do Professor</span>
     </a>
-    <span class="hidden rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-semibold text-indigo-700 sm:inline-block">4 ferramentas</span>
+    <div class="flex items-center gap-2">
+      <span class="hidden rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-semibold text-indigo-700 sm:inline-block">4 ferramentas</span>
+      <a href="/contato/" class="inline-flex items-center gap-1.5 rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200">
+        Contato
+      </a>
+    </div>
   </nav>
 </header>
 
@@ -124,7 +129,7 @@ tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"','ui-sans
 
 <footer class="mx-auto max-w-6xl px-5 pb-10">
   <div class="border-t border-slate-200 pt-6 text-center text-sm text-slate-600">
-    Desenvolvido por <strong class="font-semibold text-slate-900">Prof. Alexandre Santos</strong>
+    Desenvolvido por <strong class="font-semibold text-slate-900">Prof. Alexandre Santos</strong> · <a href="/contato/" class="font-semibold text-indigo-700 hover:underline">Contato</a>
   </div>
 </footer>
 
